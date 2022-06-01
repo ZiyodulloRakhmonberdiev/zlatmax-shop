@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220601025725">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220602002336">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -852,37 +852,75 @@
 								<div class="options-product__label">Сталь:</div>
 								<div class="options-product__value">
 									<select name="form[]" class="">
-										<option value="1" selected> Пункт №1 </option>
-										<option value="2"> Пункт №2 </option>
-										<option value="3"> Пункт №3 </option>
-										<option value="4"> Пункт №4 </option>
+										<option value="1" class="options-product__select" selected>
+											AUS-8
+										</option>
+										<option class="options-product__select" value="2">
+											ELMAX
+										</option>
+										<option class="options-product__select" value="3">
+											Дамаск
+										</option>
+										<option class="options-product__select" value="4">
+											Литой булат
+										</option>
 									</select>
 								</div>
 								<div class="options-product__label">Рукоять</div>
 								<div class="options-product__value">
 									<select name="form[]" class="">
-										<option value="1" selected> Пункт №1 </option>
-										<option value="2"> Пункт №2 </option>
-										<option value="3"> Пункт №3 </option>
-										<option value="4"> Пункт №4 </option>
+										<option class="options-product__select" value="1" selected>
+											Mercorne
+										</option>
+										<option class="options-product__select" value="2">
+											Березовый кап
+										</option>
+										<option class="options-product__select" value="3">
+											Бубинго
+										</option>
+										<option class="options-product__select" value="4">
+											Граб
+										</option>
+										<option class="options-product__select" value="5">
+											Дуб
+										</option>
+										<option class="options-product__select" value="6">
+											Квартопрен
+										</option>
 									</select>
 								</div>
 								<div class="options-product__label">Гарда и тыльник</div>
 								<div class="options-product__value">
 									<select name="form[]" class="">
-										<option value="1" selected> Пункт №1 </option>
-										<option value="2"> Пункт №2 </option>
-										<option value="3"> Пункт №3 </option>
-										<option value="4"> Пункт №4 </option>
+										<option class="options-product__select" value="1" selected>
+											Алюминий
+										</option>
+										<option class="options-product__select" value="2">
+											Латунь
+										</option>
+										<option class="options-product__select" value="3">
+											Литой Барс
+										</option>
+										<option class="options-product__select" value="4">
+											Литой Барс
+										</option>
 									</select>
 								</div>
 								<div class="options-product__label">Обработка клинка</div>
 								<div class="options-product__value">
 									<select name="form[]" class="">
-										<option value="1" selected> Пункт №1 </option>
-										<option value="2"> Пункт №2 </option>
-										<option value="3"> Пункт №3 </option>
-										<option value="4"> Пункт №4 </option>
+										<option class="options-product__select" value="1" selected>
+											Каштан
+										</option>
+										<option class="options-product__select" value="2">
+											Кожа-Металл
+										</option>
+										<option class="options-product__select" value="3">
+											Комбинированная
+										</option>
+										<option class="options-product__select" value="4">
+											Литье
+										</option>
 									</select>
 								</div>
 							</div>
@@ -1033,12 +1071,28 @@
 								</div>
 								<div class="delivery__mail mail">
 									<div class="mail__row">
-										<div class="mail__title">YANDEX DELIVERY</div>
-										<div class="mail__data">3-5 дней. <span>22$</span></div>
+										<div class="mail__item">
+											<input type="radio" name="radio" id="yandex_delivery" class="mail__radio" />
+											<label for="yandex_delivery" class="mail__title">
+												YANDEX
+											</label>
+											<span>22$</span>
+										</div>
+										<div class="mail__data">3-5 дней.</div>
 									</div>
 									<div class="mail__row">
-										<div class="mail__title">BTS DELIVERY</div>
-										<div class="mail__data">5-8 дней. <span>30$</span></div>
+										<div class="mail__item">
+											<input type="radio" name="radio" id="uber_delivery" class="mail__radio" />
+											<label for="uber_delivery" class="mail__title">Uber</label><span>30$</span>
+										</div>
+										<div class="mail__data">5-8 дней.</div>
+									</div>
+									<div class="mail__row">
+										<div class="mail__item">
+											<input type="radio" name="radio" id="delivery_delivery" class="mail__radio" />
+											<label for="delivery_delivery" class="mail__title">Delivery</label><span>26$</span>
+										</div>
+										<div class="mail__data">1-4 дней.</div>
 									</div>
 									<div class="mail__order">
 										<button type="button" class=" button">Заказать</button>
@@ -1308,12 +1362,12 @@
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">Закрыть</button>
 				<div class="popup__text">
-					Поле для текста
+					Поле для модального окна
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220601025725"></script>
+	<script src="js/app.min.js?_v=20220602002336"></script>
 </body>
 
 </html>

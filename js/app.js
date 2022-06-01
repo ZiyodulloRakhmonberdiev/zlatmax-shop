@@ -8617,10 +8617,6 @@
                     el: ".controll-main-block__dotts",
                     clickable: true
                 },
-                navigation: {
-                    prevEl: ".swiper-button-prev",
-                    nextEl: ".swiper-button-next"
-                },
                 on: {
                     init: function(swiper) {
                         const allSlides = document.querySelector(".fraction-controll__all");
@@ -8654,31 +8650,24 @@
                 breakpoints: {
                     300: {
                         slidesPerView: 1,
-                        spaceBetween: 10
+                        spaceBetween: 30
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 20
+                        spaceBetween: 30
                     },
                     992: {
                         slidesPerView: 3,
                         spaceBetween: 20
                     },
-                    1370: {
+                    1280: {
                         slidesPerView: 4,
                         spaceBetween: 30
                     }
                 },
                 on: {
-                    init: function(swiper) {
-                        const allSlides = document.querySelector(".fraction-controll__all");
-                        const allSlidesItems = document.querySelectorAll(".slide-main-block:not(.swiper-slide-duplicate)");
-                        allSlides.innerHTML = allSlidesItems.length;
-                    },
-                    slideChange: function(swiper) {
-                        const currentSlide = document.querySelector(".fraction-controll__current");
-                        currentSlide.innerHTML = swiper.realIndex + 1 < 10 ? `0${swiper.realIndex + 1}` : swiper.realIndex + 1;
-                    }
+                    init: function(swiper) {},
+                    slideChange: function(swiper) {}
                 }
             });
             if (document.querySelector(".products-new")) new core(".products-new__slider", {
@@ -8712,21 +8701,13 @@
                         slidesPerView: 2,
                         spaceBetween: 20
                     },
-                    1370: {
+                    1280: {
                         slidesPerView: 3,
                         spaceBetween: 30
                     }
                 },
                 on: {
-                    init: function(swiper) {
-                        const allSlides = document.querySelector(".fraction-controll__all");
-                        const allSlidesItems = document.querySelectorAll(".slide-main-block:not(.swiper-slide-duplicate)");
-                        allSlides.innerHTML = allSlidesItems.length;
-                    },
-                    slideChange: function(swiper) {
-                        const currentSlide = document.querySelector(".fraction-controll__current");
-                        currentSlide.innerHTML = swiper.realIndex + 1 < 10 ? `0${swiper.realIndex + 1}` : swiper.realIndex + 1;
-                    }
+                    init: function(swiper) {}
                 }
             });
             if (document.querySelector(".thumbs-images")) {
